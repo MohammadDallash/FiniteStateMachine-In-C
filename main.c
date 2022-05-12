@@ -6,10 +6,13 @@ void funMyfun()
 }
 
 
+typedef void (*f_pointer_void_void)(void);
+
+
 int main()
 {
     
-   void (*p) () = funMyfun;
+   f_pointer_void_void p  = funMyfun;
    (*p) ();
 
     return 0;
