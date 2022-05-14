@@ -1,6 +1,7 @@
 #include "FSMmanager.h"
 #include "State_A.h"
 #include "State_B.h"
+#include "typedefs.h"
 #include <stdlib.h>
 #define NOfStates 2
 

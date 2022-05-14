@@ -1,11 +1,11 @@
 #include "State_B.h"
 #include "FSMmanager.h"
 
-void State_B_Enter(int x)
+void State_B_Enter(int parameter)
 {
      CurretState = State_B;
-     myStates.State_B.t=x;
-     printf("State_B_Entered and the enter Parameter is %i \n", x);
+     myStates.State_B.parameter=parameter;
+     printf("State_B_Entered and the enter Parameter is %i \n", myStates.State_B.parameter);
 }
 
 
