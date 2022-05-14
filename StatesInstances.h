@@ -1,10 +1,6 @@
-typedef void (*f_pointer_void_void)(void);
-typedef void (*f_pointer_void_int)(int);
 
-typedef void (*f_pointer_void_int_int)(int, int);
-
-
-
+#ifndef HEADER_H_NAME
+#define HEADER_H_NAME
 typedef struct StateNoParameters
 {
     f_pointer_void_void Enter;
@@ -32,5 +28,6 @@ typedef struct StateOneEnterParameter_int_int
     int parameter1;
     int parameter2;
 } StateOneEnterParameter_int_int;
+#endif
 
 
