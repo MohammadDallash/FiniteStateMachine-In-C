@@ -15,7 +15,7 @@ int main()
 
     myStates.State_B.Enter(4);
     
-    loop[CurretState]();
+    Update[CurretState]();
 
 
 }

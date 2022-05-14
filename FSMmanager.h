@@ -15,15 +15,17 @@ typedef void (*f_pointer_void_int)(int);
 typedef struct StateNoParameters
 {
     f_pointer_void_void Enter;
-    f_pointer_void_void Loop;
+    f_pointer_void_void Update;
     f_pointer_void_void Output;
+    f_pointer_void_void Exist;
 } StateNoParameters;
 
 typedef struct StateOneEnterParameter_int
 {
     f_pointer_void_int Enter;
-    f_pointer_void_void Loop;
+    f_pointer_void_void Update;
     f_pointer_void_void Output;
+    f_pointer_void_void Exist;
     int t;
 } StateOneEnterParameter_int;
 
@@ -37,7 +39,7 @@ typedef struct States
 
 extern States myStates ; //Extern tells the complier this variable exist and I am gonna use it but it is actually declared somewhere else
 
-extern f_pointer_void_void* loop;
+extern f_pointer_void_void* Update;
 
 extern StatesEnum CurretState;
 
