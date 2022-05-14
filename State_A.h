@@ -4,5 +4,5 @@ void State_A_Init();
 void State_A_Enter();
 void State_A_Update();
 void State_A_Output();
-void State_A_Exist();
+void State_A_Exit();
 #endif

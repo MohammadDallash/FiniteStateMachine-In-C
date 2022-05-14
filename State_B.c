@@ -24,9 +24,9 @@ void State_B_Output()
 
 
 
-void State_B_Exist()
+void State_B_Exit()
 {
-     printf("State_B_Exist\n");
+     printf("State_B_Exit\n");
 }
 
 
@@ -35,7 +35,7 @@ void State_B_Init()
      myStates.State_B.Enter  = State_B_Enter;
      myStates.State_B.Update   = State_B_Update;
      myStates.State_B.Output = State_B_Output;
-     myStates.State_B.Exist = State_B_Exist;
+     myStates.State_B.Exit = State_B_Exit;
      Update[State_B] = myStates.State_B.Update;
 
 }
