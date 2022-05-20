@@ -25,7 +25,7 @@ void State_A_Exit()
      printf("State_A_Exit\n");
 }
 
-void State_A_Init()
+void State_A_SetUp()
 {
      myStates.State_A.Enter  = State_A_Enter;
      myStates.State_A.Update   = State_A_Update;

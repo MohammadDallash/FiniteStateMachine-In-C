@@ -9,7 +9,7 @@ int main()
 
 
      
-   FSM_int();
+   FSM_SetUp();
     
     CurretState = State_B;
 

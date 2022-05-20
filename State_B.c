@@ -30,7 +30,7 @@ void State_B_Exit()
 }
 
 
-void State_B_Init()
+void State_B_SetUp()
 {
      myStates.State_B.Enter  = State_B_Enter;
      myStates.State_B.Update   = State_B_Update;

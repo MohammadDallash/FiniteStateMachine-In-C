@@ -12,13 +12,13 @@ f_pointer_void_void* Update;
 
 States myStates;
 
-void FSM_int()
+void FSM_SetUp()
 {
     Update = (f_pointer_void_void*)calloc(NOfStates, sizeof(f_pointer_void_void));
     /*we cannot free the memory we allocated for the array as we are using it throughout
     the whole program which is running consciously as we are jumping from a state to another one*/
-    State_A_Init();
-    State_B_Init();
+    State_A_SetUp();
+    State_B_SetUp();
 
 };
 
